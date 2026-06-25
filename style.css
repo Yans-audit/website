@@ -145,10 +145,13 @@ p{margin:0 0 1rem}
 .team{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .member{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
 .member .ph{height:8px;background:linear-gradient(90deg,var(--navy),var(--cyan),var(--green))}
+.member .photo{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:var(--mist-2)}
 .member .body{padding:22px 24px}
 .member .role{color:var(--green-600);font-weight:700;font-size:.85rem;font-family:"Manrope",sans-serif}
-.member h3{margin:.3rem 0}
-.member p{font-size:.92rem;color:var(--slate);margin:0}
+.member h3{margin:.3rem 0;font-size:1.1rem}
+.member p{font-size:.9rem;color:var(--slate);margin:.4rem 0 0}
+.member .quals{list-style:none;padding:0;margin:.7rem 0 0;display:flex;flex-wrap:wrap;gap:6px}
+.member .quals li{font-size:.72rem;font-weight:600;color:var(--navy);background:var(--mist);border:1px solid var(--line);border-radius:999px;padding:3px 9px;font-family:"Manrope",sans-serif}
 
 /* contacts */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
