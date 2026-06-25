@@ -29,7 +29,7 @@
       <a href="services.html">Услуги</a>
       <a href="audit.html">Аудит</a>
       <a href="msfo.html">МСФО</a>
-      <a href="advisory.html">Сделки и оценка</a>
+      <a href="advisory.html">Due diligence</a>
       <a href="team.html">Команда</a>
       <a href="contacts.html" class="active">Контакты</a>
     </nav>
@@ -54,24 +54,44 @@
     <div class="row"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#003680" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg></div>
       <div><b>Как добраться</b>От м. «Динамо» (выход 1) или «Петровский парк» (выход 4) — 15–20 минут пешком. На транспорте от «Петровского парка», «Савёловской» или «Дмитровской».</div></div>
   </div>
-  <div class="form reveal">
+  <form class="form reveal" action="https://formsubmit.co/n.litvinov@yans-audit.ru" method="POST">
     <h3 style="margin-bottom:1rem">Напишите нам</h3>
-    <label for="n">Имя</label><input id="n" type="text" placeholder="Как к вам обращаться">
-    <label for="p">Телефон</label><input id="p" type="tel" placeholder="+7 (___) ___-__-__">
-    <label for="m">Сообщение</label><textarea id="m" rows="4" placeholder="Коротко о задаче"></textarea>
-    <button class="btn navy" type="button" onclick="alert('Это демонстрационная форма. Подключение к почте/CRM настраивается при запуске сайта.')">Отправить заявку</button>
-    <p class="note" style="margin-top:12px">Нажимая кнопку, вы соглашаетесь на обработку персональных данных. Поля заполняются по желанию — мы перезвоним.</p>
-  </div>
+    <label for="n">Имя</label><input id="n" name="Имя" type="text" required placeholder="Как к вам обращаться">
+    <label for="p">Телефон</label><input id="p" name="Телефон" type="tel" placeholder="+7 (___) ___-__-__">
+    <label for="e">E-mail</label><input id="e" name="email" type="email" placeholder="Для ответа на заявку">
+    <label for="m">Сообщение</label><textarea id="m" name="Сообщение" rows="4" placeholder="Коротко о задаче"></textarea>
+    <input type="hidden" name="_subject" value="Новая заявка с сайта yans-audit">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="true">
+    <input type="hidden" name="_honey" value="">
+    <button class="btn navy" type="submit">Отправить заявку</button>
+    <p class="note" style="margin-top:12px">Нажимая кнопку, вы соглашаетесь на обработку персональных данных. Мы свяжемся с вами по указанным контактам.</p>
+  </form>
 </div></div></section>
 
 <section class="section mist"><div class="wrap">
   <p class="eyebrow">Раскрытие информации</p>
-  <h2 style="margin-bottom:24px">Отчёты аудиторской организации</h2>
-  <div class="logos">
-    <a class="logo-chip" href="#">Отчёт за 2021 год</a>
-    <a class="logo-chip" href="#">Отчёт за 2022 год</a>
-    <a class="logo-chip" href="#">Отчёт за 2023 год</a>
-    <a class="logo-chip" href="#">Отчёт за 2024 год</a>
+  <h2 style="margin-bottom:24px">Сведения об аудиторской организации</h2>
+  <div class="svc-detail">
+    <div class="reveal">
+      <p>ООО «Аудиторско-Консультационная Группа «Я.Н.С. Аудит» — член саморегулируемой организации аудиторов СРО ААС (Ассоциация «Содружество»).</p>
+      <ul class="checks" style="margin-top:1rem">
+        <li>ОРНЗ 12006066598 (в реестре аудиторов с 25.02.2020)</li>
+        <li>ОГРН 1047796631123 · ИНН 7708534651</li>
+        <li>Система управления качеством в соответствии с МСК 1</li>
+        <li>Внешняя проверка качества СРО ААС в 2024 году (период 2021–2023)</li>
+        <li>Страхование ответственности аудитора</li>
+      </ul>
+    </div>
+    <div class="aside-card reveal">
+      <h3>Отчёты аудиторской организации</h3>
+      <div class="logos" style="margin-top:1rem">
+        <a class="logo-chip" href="docs/otchet-auditorskoj-organizacii-2021.pdf" target="_blank" rel="noopener">Отчёт за 2021 год</a>
+        <a class="logo-chip" href="docs/otchet-auditorskoj-organizacii-2022.pdf" target="_blank" rel="noopener">Отчёт за 2022 год</a>
+        <a class="logo-chip" href="docs/otchet-auditorskoj-organizacii-2023.pdf" target="_blank" rel="noopener">Отчёт за 2023 год</a>
+        <a class="logo-chip" href="docs/otchet-auditorskoj-organizacii-2024.pdf" target="_blank" rel="noopener">Отчёт за 2024 год</a>
+      </div>
+    </div>
   </div>
 </div></section>
 <footer class="site-foot">
@@ -86,7 +106,7 @@
         <h4>Услуги</h4>
         <a href="audit.html">Обязательный аудит</a>
         <a href="msfo.html">МСФО</a>
-        <a href="advisory.html">Due diligence и оценка</a>
+        <a href="advisory.html">Due diligence</a>
         <a href="services.html#nalog">Налоговый аудит</a>
         <a href="services.html#forensic">Форензик-аудит</a>
       </div>

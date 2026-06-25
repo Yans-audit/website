@@ -1,0 +1,27 @@
+ОТЧЁТЫ АУДИТОРСКОЙ ОРГАНИЗАЦИИ (раскрытие информации)
+=====================================================
+
+Раздел «Раскрытие информации» на странице «Контакты» ссылается на 4 файла
+в этой папке. Положите сюда 4 PDF РОВНО с такими именами:
+
+  docs/otchet-auditorskoj-organizacii-2021.pdf
+  docs/otchet-auditorskoj-organizacii-2022.pdf
+  docs/otchet-auditorskoj-organizacii-2023.pdf
+  docs/otchet-auditorskoj-organizacii-2024.pdf
+
+Скачать их можно с текущего сайта (правый клик → «Сохранить ссылку как…»),
+затем переименовать как указано выше:
+
+  2021: https://www.yans-audit.ru/wp-content/uploads/2024/09/otchet-auditorskoj-organizacii-za-2021-god.pdf
+  2022: https://www.yans-audit.ru/wp-content/uploads/2024/09/otchet-auditorskoj-organizacii-2022-akg-y-a-n-s-audit.pdf
+  2023: https://www.yans-audit.ru/wp-content/uploads/2024/09/otchet-auditorskoj-organizacii-2023-akg-y-a-n-s-audit.pdf
+  2024: https://www.yans-audit.ru/wp-content/uploads/2025/03/otchet-auditorskoj-organizacii-2024-akg-y-a-n-s-audit.pdf
+
+Заливка на GitHub (через веб-интерфейс):
+  1. Откройте репозиторий → откройте папку docs (или создайте её кнопкой
+     «Add file» → «Create new file», вписав docs/имя-файла).
+  2. «Add file» → «Upload files» → перетащите 4 PDF → «Commit changes».
+
+После этого ссылки на отчёты на сайте заработают.
+
+Этот файл-инструкцию можно потом удалить — на работу сайта он не влияет.
