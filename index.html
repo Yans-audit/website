@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ЯНС-Аудит — аудиторско-консультационная группа</title>
+<meta name="description" content="ЯНС-Аудит — аудиторско-консультационная группа. Аудит, МСФО, due diligence, налоговый и юридический консалтинг, оценка. Более 25 лет на рынке.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-head">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="ЯНС-Аудит, на главную">
+      <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+        <g>
+          <circle cx="32" cy="32" r="30" fill="none" stroke="#e2e7f0" stroke-width="1"/>
+          <!-- four figures motif from brochure -->
+          <g>
+            <circle cx="18" cy="24" r="4.4" fill="#00A0C8"/><rect x="13.6" y="29" width="8.8" height="16" rx="4.4" fill="#00A0C8"/>
+            <circle cx="28" cy="21" r="4.4" fill="#003680"/><rect x="23.6" y="26" width="8.8" height="19" rx="4.4" fill="#003680"/>
+            <circle cx="38" cy="21" r="4.4" fill="#003680"/><rect x="33.6" y="26" width="8.8" height="19" rx="4.4" fill="#003680"/>
+            <circle cx="48" cy="24" r="4.4" fill="#7AB648"/><rect x="43.6" y="29" width="8.8" height="16" rx="4.4" fill="#7AB648"/>
+          </g>
+        </g>
+      </svg>
+      <span><b>ЯНС-Аудит</b><small>Аудиторско-консультационная группа</small></span>
+    </a>
+    <nav class="nav-links" id="menu">
+      <a href="index.html" class="active">Главная</a>
+      <a href="about.html">О компании</a>
+      <a href="services.html">Услуги</a>
+      <a href="audit.html">Аудит</a>
+      <a href="msfo.html">МСФО</a>
+      <a href="advisory.html">Сделки и оценка</a>
+      <a href="team.html">Команда</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <a href="contacts.html" class="btn">Консультация</a>
+    <button class="burger" aria-label="Меню" onclick="document.getElementById('menu').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <p class="eyebrow">с 2000 года · топ-50 «Эксперт РА»</p>
+      <h1>Лучшие решения <span>для вашего бизнеса</span></h1>
+      <p class="lede">Независимый аудит и финансовый консалтинг, которым доверяют крупнейшие инвестиционные группы и финансовые институты.</p>
+      <div class="hero-cta">
+        <a href="contacts.html" class="btn">Получить консультацию</a>
+        <a href="services.html" class="btn ghost">Все услуги</a>
+      </div>
+      <p class="hero-tag script">Глобальное видение.<b>Детальный анализ.</b></p>
+    </div>
+    <div class="hero-art reveal">
+      <!-- concentric people-circle motif, recoloured brand mark -->
+      <svg viewBox="0 0 420 420" width="100%" style="max-width:420px" aria-hidden="true" id="ring">
+        <defs></defs>
+        <g id="ringg" transform="translate(210,210)"></g>
+        <circle cx="210" cy="210" r="34" fill="none" stroke="#003680" stroke-width="6"/>
+      </svg>
+    </div>
+  </div>
+  <!-- metrics -->
+  <div class="metrics wrap" style="border-radius:0;max-width:none">
+    <div class="wrap" style="display:contents">
+      <div class="metric"><div class="n">25</div><div class="l">лет на рынке</div></div>
+      <div class="metric"><div class="n">11</div><div class="l">аттестованных аудиторов</div></div>
+      <div class="metric"><div class="n">85%</div><div class="l">клиентов с нами 5+ лет</div></div>
+      <div class="metric"><div class="n">50+</div><div class="l">заключений в год</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Услуги</p>
+    <div class="lead-row" style="margin-bottom:40px">
+      <h2>Полный спектр аудита и консалтинга</h2>
+      <p style="color:var(--slate)">От обязательного аудита до финансовых расследований и сопровождения сделок. Каждый проект — это поиск оптимального пути для вашего бизнеса, а не просто проверка.</p>
+    </div>
+    <div class="cards">
+      <a class="card reveal" href="audit.html">
+        <svg class="ic" viewBox="0 0 48 48"><rect x="9" y="6" width="30" height="36" rx="3" fill="none" stroke="#003680" stroke-width="2.5"/><path d="M15 16h18M15 23h18M15 30h11" stroke="#7AB648" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <h3>Обязательный аудит</h3>
+        <p>Аудит по РСБУ для случаев, установленных законом. Заключениям доверяют банки и инвесторы.</p>
+        <span class="more">Подробнее →</span>
+      </a>
+      <a class="card reveal" href="msfo.html">
+        <svg class="ic" viewBox="0 0 48 48"><circle cx="24" cy="24" r="17" fill="none" stroke="#003680" stroke-width="2.5"/><path d="M24 7v34M7 24h34" stroke="#00A0C8" stroke-width="2.5"/></svg>
+        <h3>МСФО и аудит МСФО</h3>
+        <p>Трансформация и аудит отчётности по международным стандартам для иностранных партнёров и консолидации.</p>
+        <span class="more">Подробнее →</span>
+      </a>
+      <a class="card reveal" href="advisory.html">
+        <svg class="ic" viewBox="0 0 48 48"><path d="M8 30l9-9 7 6 12-13" fill="none" stroke="#003680" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="38" cy="14" r="3" fill="#F53628"/></svg>
+        <h3>Due diligence и оценка</h3>
+        <p>Предынвестиционная экспертиза, оценка рисков сделки и справедливой стоимости актива по DCF-модели.</p>
+        <span class="more">Подробнее →</span>
+      </a>
+      <a class="card reveal" href="services.html#nalog">
+        <svg class="ic" viewBox="0 0 48 48"><path d="M24 6l16 6v9c0 11-7 17-16 21-9-4-16-10-16-21v-9z" fill="none" stroke="#003680" stroke-width="2.5" stroke-linejoin="round"/><path d="M17 24l5 5 9-10" stroke="#7AB648" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        <h3>Налоговый аудит и споры</h3>
+        <p>Оценка налоговых рисков, защита позиции в инспекции и арбитраже, ТЦО, налоговое планирование.</p>
+        <span class="more">Подробнее →</span>
+      </a>
+      <a class="card reveal" href="services.html#forensic">
+        <svg class="ic" viewBox="0 0 48 48"><circle cx="21" cy="21" r="13" fill="none" stroke="#003680" stroke-width="2.5"/><path d="M30 30l10 10" stroke="#00A0C8" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <h3>Форензик-аудит</h3>
+        <p>Финансовое расследование, выявление недобросовестности и вывода активов при полной конфиденциальности.</p>
+        <span class="more">Подробнее →</span>
+      </a>
+      <a class="card reveal" href="services.html#fta">
+        <svg class="ic" viewBox="0 0 48 48"><path d="M8 40h32M14 40V22M24 40V12M34 40V26" stroke="#003680" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="12" r="3" fill="#7AB648"/></svg>
+        <h3>Финансово-технический аудит</h3>
+        <p>Комплексная оценка инвестпроекта на этапе реализации по запросу кредитора или инвестора.</p>
+        <span class="more">Подробнее →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section mist">
+  <div class="wrap">
+    <p class="eyebrow">Почему мы</p>
+    <h2 style="margin-bottom:34px">Аргументы, которые можно предъявить</h2>
+    <div class="why">
+      <div class="item reveal"><div class="big">20+</div><p>лет опыта во всех ключевых отраслях: IT, фарма, строительство, торговля, производство, НКО</p></div>
+      <div class="item reveal"><div class="big">ISO</div><p>сертификат системы контроля качества и регулярные внешние проверки со стороны СРО ААС</p></div>
+      <div class="item reveal"><div class="big">85%</div><p>клиентов работают с нами на ежегодной основе пять лет и более</p></div>
+      <div class="item reveal"><div class="big">∞</div><p>страхование ответственности аудитора и безусловная конфиденциальность информации</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Нас рекомендуют</p>
+    <div class="lead-row" style="margin-bottom:34px">
+      <h2>Нам доверяют компании из разных отраслей</h2>
+      <p style="color:var(--slate)">Мы открыты к сотрудничеству и готовы решать задачи вашего бизнеса — от небольших торговых фирм до международных корпораций.</p>
+    </div>
+    <div class="logos">
+      <span class="logo-chip">НОРБИТ</span>
+      <span class="logo-chip">АГРОИНВЕСТ</span>
+      <span class="logo-chip">Стивидоры Ямал</span>
+      <span class="logo-chip">Дальпромрыба</span>
+      <span class="logo-chip">ЕВРОПЕУМ</span>
+      <span class="logo-chip">ОРТЕКА</span>
+      <span class="logo-chip">ТРАНСФИНГРУПП</span>
+      <span class="logo-chip">Хлебпром</span>
+      <span class="logo-chip">ЭнДиБиСи</span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <svg class="pat" viewBox="0 0 200 200" aria-hidden="true"><g id="patg" transform="translate(100,100)"></g></svg>
+      <div>
+        <h2>Обеспечим уверенность в ваших цифрах</h2>
+        <p>Бесплатная консультация по любой задаче — аудит, МСФО, сделка или налоговый спор.</p>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a href="tel:+74951031051" class="btn">+7 (495) 103-10-51</a>
+        <a href="contacts.html" class="btn ghost" style="color:#fff;border-color:rgba(255,255,255,.35)">Написать нам</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <b>ЯНС-Аудит</b>
+        <p style="margin-top:10px;max-width:34ch">Аудиторско-консультационная группа. Обеспечиваем разумную уверенность клиентов в качестве их финансовой информации более 25 лет.</p>
+        <p class="foot-tag script">Глобальное видение. Детальный анализ.</p>
+      </div>
+      <div>
+        <h4>Услуги</h4>
+        <a href="audit.html">Обязательный аудит</a>
+        <a href="msfo.html">МСФО</a>
+        <a href="advisory.html">Due diligence и оценка</a>
+        <a href="services.html#nalog">Налоговый аудит</a>
+        <a href="services.html#forensic">Форензик-аудит</a>
+      </div>
+      <div>
+        <h4>Компания</h4>
+        <a href="about.html">О компании</a>
+        <a href="team.html">Команда</a>
+        <a href="services.html">Все услуги</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <a href="tel:+74951031051">+7 (495) 103-10-51</a>
+        <a href="mailto:yans@yans-audit.ru">yans@yans-audit.ru</a>
+        <a href="#">Москва, ул. 8 Марта, вл. 1,<br>стр. 12, к. 3, БЦ «ТРИО»</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2000–2026 ЯНС-Аудит. Все права защищены.</span>
+      <span>Политика конфиденциальности</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
