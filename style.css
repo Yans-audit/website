@@ -75,9 +75,8 @@ p{margin:0 0 1rem}
 .hero .lede{font-size:1.2rem;color:var(--slate);max-width:40ch;margin-bottom:1.9rem}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .hero-art{position:relative;display:flex;justify-content:center;align-items:center;min-height:400px}
-.hero-art::before{content:"";position:absolute;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 38% 32%,#8fc8ff,#6DC67A);opacity:.45;right:4px;top:-10px;z-index:0;filter:blur(1px)}
-.hero-photo{position:relative;z-index:1;width:100%;max-width:460px;aspect-ratio:11/9;border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
-.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-art::before{content:"";position:absolute;width:130px;height:130px;border-radius:50%;background:radial-gradient(circle at 38% 32%,#9fd0ff,#6DC67A);opacity:.5;right:-6px;top:6px;z-index:0;filter:blur(2px)}
+.hero-illu{position:relative;z-index:1;width:100%;max-width:560px;height:auto;display:block;filter:drop-shadow(0 26px 44px rgba(22,58,140,.14))}
 .hero-dots{position:absolute;left:0;bottom:20px;width:88px;height:88px;z-index:0}
 
 /* metric strip */
@@ -100,7 +99,7 @@ p{margin:0 0 1rem}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px 26px;transition:.2s;display:flex;flex-direction:column}
 .card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}
-.card .ic{width:48px;height:48px;margin-bottom:18px;background:var(--mist);border-radius:12px;padding:9px}
+.card .ic{width:56px;height:56px;margin-bottom:18px;background:#eaf3fe;border-radius:50%;padding:12px}
 .card h3{margin-bottom:.5rem}
 .card p{font-size:.96rem;color:var(--slate);margin-bottom:1rem}
 .card .more{margin-top:auto;font-weight:700;font-size:.9rem;color:var(--coral);display:inline-flex;gap:6px;align-items:center;font-family:"Manrope",sans-serif}
@@ -210,3 +209,10 @@ p{margin:0 0 1rem}
   .foot-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:560px){.cards,.why,.team,.foot-grid{grid-template-columns:1fr}}
+
+/* ---------- фирменный декоративный мотив (дуги + точки в углу) ---------- */
+.hero,.phero{position:relative}
+.hero::after,.phero::after{content:"";position:absolute;top:0;right:0;width:300px;height:300px;max-width:46%;
+  background:url("img/decor-arc.svg") top right/contain no-repeat;pointer-events:none;z-index:0;opacity:.95}
+.hero-grid,.hero .metrics,.phero>.wrap{position:relative;z-index:1}
+@media(max-width:560px){.hero::after,.phero::after{width:180px;height:180px;opacity:.55}}
