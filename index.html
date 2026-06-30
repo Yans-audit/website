@@ -1,209 +1,268 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ЯНС-Аудит — аудиторско-консультационная группа</title>
-<meta name="description" content="ЯНС-Аудит — аудиторская компания. Аудит, МСФО, due diligence, налоговый аудит, форензик, ФТА, внутренний аудит. Более 20 лет на рынке.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-<link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
 </head>
 <body>
+<x-dc>
+<helmet>
+  <title>ЯНС-Аудит — аудиторская компания в Москве: аудит, МСФО, due diligence</title>
+  <meta name="description" content="ООО «АКГ «Я.Н.С. Аудит» — независимая аудиторская компания. Обязательный аудит, МСФО, due diligence, налоговый и форензик-аудит. 20+ лет на рынке, член СРО ААС.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="аудит, аудиторская компания Москва, обязательный аудит, МСФО, due diligence, налоговый аудит, форензик-аудит">
+  <link rel="canonical" href="https://yans-audit.ru/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="ЯНС-Аудит">
+  <meta property="og:title" content="ЯНС-Аудит — аудит, МСФО, due diligence">
+  <meta property="og:description" content="Независимая аудиторско-консультационная группа. Обеспечиваем уверенность в финансовой информации более 20 лет.">
+  <meta property="og:image" content="https://yans-audit.ru/assets/office-hero.png">
+  <meta property="og:url" content="https://yans-audit.ru/">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"AccountingService","name":"ЯНС-Аудит","legalName":"ООО «АКГ «Я.Н.С. Аудит»","url":"https://yans-audit.ru/","image":"https://yans-audit.ru/assets/office-hero.png","telephone":"+7-495-103-10-51","email":"yans@yans-audit.ru","foundingDate":"2004","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"ул. 8 Марта, вл. 1, стр. 12, к. 3, БЦ «ТРИО»","addressLocality":"Москва","postalCode":"127083","addressCountry":"RU"},"areaServed":"RU","vatID":"7708534651","identifier":"ОГРН 1047796631123"}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;}
+    body{margin:0; background:#FFFFFF;}
+    ::selection{background:#CDEBD4;}
+  </style>
+</helmet>
 
-<!-- HEADER -->
-<header class="site-head">
-  <div class="wrap nav">
-    <a class="brand" href="index.html" aria-label="ЯНС-Аудит, на главную">
-      <img class="mark" src="img/logo-mark.png" alt="" aria-hidden="true">
-      <span><b>ЯНС-Аудит</b><small>Аудиторско-консультационная группа</small></span>
-    </a>
-    <nav class="nav-links" id="menu">
-      <a href="index.html" class="active">Главная</a>
-      <a href="about.html">О компании</a>
-      <a href="services.html">Услуги</a>
-      <a href="audit.html">Аудит</a>
-      <a href="msfo.html">МСФО</a>
-      <a href="advisory.html">Due diligence</a>
-      <a href="team.html">Команда</a>
-      <a href="contacts.html">Контакты</a>
-    </nav>
-    <a href="contacts.html" class="btn">Консультация</a>
-    <button class="burger" aria-label="Меню" onclick="document.getElementById('menu').classList.toggle('open')"><span></span><span></span><span></span></button>
-  </div>
-</header>
+<div style="font-family:'Manrope',sans-serif; color:#3A4452; background:#FFFFFF; overflow-x:hidden;">
 
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div class="reveal">
-      <h1>Глобальное видение. <span>Детальный анализ.</span></h1>
-      <p class="lede">Мы обеспечиваем уверенность в финансовой информации и помогаем бизнесу принимать взвешенные решения.</p>
-      <div class="hero-cta">
-        <a href="services.html" class="btn">Наши услуги →</a>
-        <a href="contacts.html" class="btn ghost">Связаться с нами</a>
-      </div>
+  <!-- ============ HEADER ============ -->
+  <header style="position:sticky; top:0; z-index:50; background:rgba(255,255,255,.88); backdrop-filter:blur(12px); border-bottom:1px solid #E6ECF4;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px; height:78px; display:flex; align-items:center; gap:28px;">
+      <a href="#top" style="display:flex; align-items:center; margin-right:auto; text-decoration:none;">
+        <img src="assets/logo-main.png" alt="ЯНС-Аудит" style="height:42px; width:auto;">
+      </a>
+      <nav style="display:flex; gap:26px; align-items:center;">
+        <sc-for list="{{ nav }}" as="n" hint-placeholder-count="6">
+          <a href="{{ n.href }}" style="font:600 14.5px 'Manrope',sans-serif; color:#3A4452; text-decoration:none; white-space:nowrap;" style-hover="color:#163A8C;">{{ n.label }}</a>
+        </sc-for>
+      </nav>
+      <a href="#contacts" style="font:700 14px 'Manrope',sans-serif; color:#FFFFFF; background:#163A8C; padding:11px 22px; border-radius:999px; text-decoration:none; white-space:nowrap;" style-hover="background:#112d6e;">Консультация</a>
     </div>
-    <div class="hero-art reveal">
-      <img class="hero-illu" src="img/office-hero.png" alt="Бизнес-центр, офис ЯНС-Аудит">
-    </div>
-  </div>
-  <!-- metrics -->
-  <div class="metrics wrap" style="border-radius:0;max-width:none">
-    <div class="wrap" style="display:contents">
-      <div class="metric"><div class="n">20+</div><div class="l">лет на рынке</div></div>
-      <div class="metric"><div class="n">10</div><div class="l">аттестованных аудиторов</div></div>
-      <div class="metric"><div class="n">85%</div><div class="l">клиентов с нами 5+ лет</div></div>
-      <div class="metric"><div class="n">50+</div><div class="l">заключений в год</div></div>
-    </div>
-  </div>
-</section>
+  </header>
 
-<!-- SERVICES -->
-<section class="section">
-  <div class="wrap">
-    <p class="eyebrow">Услуги</p>
-    <div class="lead-row" style="margin-bottom:40px">
-      <h2>Полный спектр аудиторских услуг</h2>
-      <p style="color:var(--slate)">От обязательного аудита до финансовых расследований и независимой экспертизы сделок. Каждый проект — это поиск оптимального пути для вашего бизнеса, а не просто проверка.</p>
-    </div>
-    <div class="cards">
-      <a class="card reveal" href="audit.html">
-        <svg class="ic" viewBox="0 0 48 48"><circle cx="21" cy="20" r="13" fill="none" stroke="#163A8C" stroke-width="2.6"/><path d="M30.5 29.5 41 40" stroke="#163A8C" stroke-width="2.6" stroke-linecap="round"/><path d="M15 20.5l4.5 4.5 8-9" fill="none" stroke="#6DC67A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <h3>Обязательный аудит</h3>
-        <p>Аудит по РСБУ для случаев, установленных законом. Заключениям доверяют банки и инвесторы.</p>
-        <span class="more">Подробнее →</span>
-      </a>
-      <a class="card reveal" href="msfo.html">
-        <svg class="ic" viewBox="0 0 48 48"><path d="M12 5h15l9 9v29H12z" fill="none" stroke="#163A8C" stroke-width="2.6" stroke-linejoin="round"/><path d="M27 5v9h9" fill="none" stroke="#163A8C" stroke-width="2.6" stroke-linejoin="round"/><path d="M18 36V30M24 36V25M30 36V21" stroke="#6DC67A" stroke-width="2.6" stroke-linecap="round"/></svg>
-        <h3>МСФО и аудит МСФО</h3>
-        <p>Трансформация и аудит отчётности по международным стандартам для иностранных партнёров и консолидации.</p>
-        <span class="more">Подробнее →</span>
-      </a>
-      <a class="card reveal" href="advisory.html">
-        <svg class="ic" viewBox="0 0 48 48"><circle cx="24" cy="24" r="14" fill="none" stroke="#163A8C" stroke-width="2.6"/><path d="M24 24V10A14 14 0 0 1 38 24Z" fill="#63B1F7" opacity=".9"/><circle cx="24" cy="24" r="5.5" fill="#fff"/></svg>
-        <h3>Due diligence</h3>
-        <p>Финансовая и налоговая предынвестиционная экспертиза объекта сделки.</p>
-        <span class="more">Подробнее →</span>
-      </a>
-      <a class="card reveal" href="services.html#nalog">
-        <svg class="ic" viewBox="0 0 48 48"><path d="M24 5l15 6v9c0 11-7 17-15 21-8-4-15-10-15-21v-9z" fill="none" stroke="#163A8C" stroke-width="2.6" stroke-linejoin="round"/><path d="M17 23l5 5 9-10" stroke="#6DC67A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-        <h3>Налоговый аудит</h3>
-        <p>Диагностика налоговых рисков и проверка налогового учёта по итогам периода.</p>
-        <span class="more">Подробнее →</span>
-      </a>
-      <a class="card reveal" href="services.html#forensic">
-        <svg class="ic" viewBox="0 0 48 48"><circle cx="18" cy="17" r="6.5" fill="none" stroke="#163A8C" stroke-width="2.6"/><path d="M7 36c0-6.5 5-11 11-11s11 4.5 11 11" fill="none" stroke="#163A8C" stroke-width="2.6" stroke-linecap="round"/><circle cx="34" cy="19" r="5" fill="none" stroke="#6DC67A" stroke-width="2.6"/><path d="M30 35c.3-5 2.6-8 4-8 3.4 0 7 3 7 8" fill="none" stroke="#6DC67A" stroke-width="2.6" stroke-linecap="round"/></svg>
-        <h3>Форензик-аудит</h3>
-        <p>Финансовое расследование, выявление недобросовестности и вывода активов при полной конфиденциальности.</p>
-        <span class="more">Подробнее →</span>
-      </a>
-      <a class="card reveal" href="services.html#fta">
-        <svg class="ic" viewBox="0 0 48 48"><path d="M8 38h32" stroke="#163A8C" stroke-width="2.6" stroke-linecap="round"/><path d="M10 32l8-7 7 5 13-14" fill="none" stroke="#163A8C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="38" cy="16" r="3" fill="#FF6B6B"/></svg>
-        <h3>Финансово-технический аудит</h3>
-        <p>Комплексная оценка инвестпроекта на этапе реализации по запросу кредитора или инвестора.</p>
-        <span class="more">Подробнее →</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- WHY -->
-<section class="section mist">
-  <div class="wrap">
-    <p class="eyebrow">Почему мы</p>
-    <h2 style="margin-bottom:34px">Аргументы, которые можно предъявить</h2>
-    <div class="why">
-      <div class="item reveal"><div class="big">20+</div><p>лет опыта во всех ключевых отраслях: IT, фарма, строительство, торговля, производство, НКО</p></div>
-      <div class="item reveal"><div class="big">ААС</div><p>член СРО аудиторов ААС; внешний контроль качества пройден в 2024 году</p></div>
-      <div class="item reveal"><div class="big">85%</div><p>клиентов работают с нами на ежегодной основе пять лет и более</p></div>
-      <div class="item reveal"><div class="big">∞</div><p>страхование ответственности аудитора и безусловная конфиденциальность информации</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- CLIENTS -->
-<section class="section">
-  <div class="wrap">
-    <p class="eyebrow">Нас рекомендуют</p>
-    <div class="lead-row" style="margin-bottom:34px">
-      <h2>Нам доверяют компании из разных отраслей</h2>
-      <p style="color:var(--slate)">Мы открыты к сотрудничеству и готовы решать задачи вашего бизнеса — от небольших торговых фирм до международных корпораций.</p>
-    </div>
-    <div class="logos">
-      <span class="logo-chip">НОРБИТ</span>
-      <span class="logo-chip">АГРОИНВЕСТ</span>
-      <span class="logo-chip">Стивидоры Ямал</span>
-      <span class="logo-chip">Дальпромрыба</span>
-      <span class="logo-chip">ЕВРОПЕУМ</span>
-      <span class="logo-chip">ОРТЕКА</span>
-      <span class="logo-chip">ТРАНСФИНГРУПП</span>
-      <span class="logo-chip">Хлебпром</span>
-      <span class="logo-chip">ЭнДиБиСи</span>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section" style="padding-top:0">
-  <div class="wrap">
-    <div class="cta-band reveal">
-      <svg class="pat" viewBox="0 0 200 200" aria-hidden="true"><g id="patg" transform="translate(100,100)"></g></svg>
+  <!-- ============ HERO ============ -->
+  <section id="top" style="position:relative; overflow:hidden; background:linear-gradient(180deg,#FFFFFF 0%,#F2F5F9 100%);">
+    <div style="position:absolute; right:-160px; top:-120px; width:520px; height:520px; border-radius:50%; background:linear-gradient(150deg,#EAF2FE,#FFFFFF); z-index:0;"></div>
+    <div style="position:absolute; right:120px; top:120px; width:230px; height:230px; border-radius:50%; border:1.5px solid #CFE0FB; z-index:0;"></div>
+    <div style="position:absolute; left:46%; bottom:-90px; width:180px; height:180px; border-radius:50%; background:linear-gradient(150deg,#CDEBD4,#EAF2FE); opacity:.6; z-index:0;"></div>
+    <div style="max-width:1200px; margin:0 auto; padding:78px 40px 70px; display:grid; grid-template-columns:1.06fr .94fr; gap:48px; align-items:center; position:relative; z-index:1;">
       <div>
-        <h2>Обеспечим уверенность в ваших цифрах</h2>
-        <p>Бесплатная консультация по любой задаче — аудит, МСФО, due diligence или налоговый аудит.</p>
+        <div style="display:inline-flex; align-items:center; gap:10px; font:700 12px 'Manrope',sans-serif; color:#163A8C; letter-spacing:.18em; text-transform:uppercase;"><span style="width:7px; height:7px; border-radius:50%; background:#6DC67A;"></span>Аудит · МСФО · Due&nbsp;diligence · Форензик</div>
+        <h1 style="font:600 56px 'Lora',serif; color:#163A8C; line-height:1.08; letter-spacing:-.015em; margin:20px 0 0;">Глобальное&nbsp;видение.<br><span style="color:#6DC67A;">Детальный&nbsp;анализ.</span></h1>
+        <p style="font:400 18px 'Manrope',sans-serif; color:#5B6573; line-height:1.6; max-width:40ch; margin:24px 0 0;">Обеспечиваем уверенность в финансовой информации и помогаем бизнесу принимать взвешенные решения — уже более 20 лет.</p>
+        <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:34px;">
+          <a href="#services" style="display:inline-flex; align-items:center; gap:8px; font:700 15px 'Manrope',sans-serif; color:#FFFFFF; background:#163A8C; padding:14px 26px; border-radius:999px; text-decoration:none;" style-hover="background:#112d6e;">Наши услуги →</a>
+          <a href="#contacts" style="display:inline-flex; align-items:center; font:700 15px 'Manrope',sans-serif; color:#163A8C; background:transparent; border:1.5px solid #CFD8E6; padding:14px 26px; border-radius:999px; text-decoration:none;" style-hover="border-color:#163A8C;">Связаться с нами</a>
+        </div>
       </div>
-      <div style="display:flex;gap:12px;flex-wrap:wrap">
-        <a href="tel:+74951031051" class="btn">+7 (495) 103-10-51</a>
-        <a href="contacts.html" class="btn ghost" style="color:#fff;border-color:rgba(255,255,255,.35)">Написать нам</a>
+      <div style="position:relative;">
+        <div style="position:absolute; left:-26px; bottom:-26px; width:170px; height:170px; border-radius:50%; background:radial-gradient(circle at 30% 30%, rgba(109,198,122,.42), rgba(99,177,247,.16) 70%, transparent 72%); z-index:0;"></div>
+        <img src="assets/office-hero.png" alt="Бизнес-центр ЯНС-Аудит" style="position:relative; z-index:1; width:100%; border-radius:24px; box-shadow:0 30px 70px -34px rgba(22,58,140,.34); display:block;">
       </div>
     </div>
-  </div>
-</section>
+    <!-- metrics strip -->
+    <div style="border-top:1px solid #E6ECF4; background:#FFFFFF; position:relative; z-index:1;">
+      <div style="max-width:1200px; margin:0 auto; padding:0 40px; display:grid; grid-template-columns:repeat(4,1fr);">
+        <sc-for list="{{ metrics }}" as="m" hint-placeholder-count="4">
+          <div style="padding:30px 20px; text-align:center; border-right:1px solid #E6ECF4;">
+            <div style="font:600 40px 'Lora',serif; color:#163A8C; line-height:1;">{{ m.n }}</div>
+            <div style="font:500 13.5px 'Manrope',sans-serif; color:#6B7280; margin-top:8px;">{{ m.l }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
 
-<!-- FOOTER -->
-<footer class="site-foot">
-  <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <img class="foot-logo" src="img/logo-main.png" alt="ЯНС-Аудит">
-        <b>ЯНС-Аудит</b>
-        <p style="margin-top:10px;max-width:34ch">Аудиторско-консультационная группа. Обеспечиваем разумную уверенность клиентов в качестве их финансовой информации более 20 лет.</p>
-        <p class="foot-tag script">Глобальное видение. Детальный анализ.</p>
+  <!-- ============ SERVICES ============ -->
+  <section id="services" style="padding:92px 0; position:relative;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px;">
+      <div style="display:flex; align-items:center; gap:10px; font:700 12px 'Manrope',sans-serif; color:#163A8C; letter-spacing:.18em; text-transform:uppercase;"><span style="width:7px; height:7px; border-radius:50%; background:#6DC67A;"></span>Услуги</div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:end; margin:14px 0 44px;">
+        <h2 style="font:600 40px 'Lora',serif; color:#163A8C; line-height:1.12; letter-spacing:-.01em; margin:0;">Полный спектр аудиторских услуг</h2>
+        <p style="font:400 16px 'Manrope',sans-serif; color:#6B7280; line-height:1.6; margin:0;">От обязательного аудита до финансовых расследований и независимой экспертизы сделок. Каждый проект — поиск оптимального пути для бизнеса, а не просто проверка.</p>
       </div>
-      <div>
-        <h4>Услуги</h4>
-        <a href="audit.html">Обязательный аудит</a>
-        <a href="msfo.html">МСФО</a>
-        <a href="advisory.html">Due diligence</a>
-        <a href="services.html#nalog">Налоговый аудит</a>
-        <a href="services.html#forensic">Форензик-аудит</a>
-      </div>
-      <div>
-        <h4>Компания</h4>
-        <a href="about.html">О компании</a>
-        <a href="team.html">Команда</a>
-        <a href="services.html">Все услуги</a>
-        <a href="contacts.html">Контакты</a>
-      </div>
-      <div>
-        <h4>Контакты</h4>
-        <a href="tel:+74951031051">+7 (495) 103-10-51</a>
-        <a href="mailto:yans@yans-audit.ru">yans@yans-audit.ru</a>
-        <a href="#">Москва, ул. 8 Марта, вл. 1,<br>стр. 12, к. 3, БЦ «ТРИО»</a>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+        <sc-for list="{{ services }}" as="s" hint-placeholder-count="6">
+          <a href="{{ s.href }}" style="display:flex; flex-direction:column; text-decoration:none; background:#FFFFFF; border:1px solid #E6ECF4; border-radius:18px; padding:32px 30px; transition:transform .18s, box-shadow .18s, border-color .18s;" style-hover="transform:translateY(-4px); box-shadow:0 26px 60px -34px rgba(22,58,140,.34); border-color:#FFFFFF;">
+            <div style="height:36px; margin-bottom:4px;">{{ s.icon }}</div>
+            <h3 style="font:600 22px 'Lora',serif; color:#163A8C; margin:10px 0 10px; line-height:1.2;">{{ s.title }}</h3>
+            <p style="font:400 14.5px 'Manrope',sans-serif; color:#6B7280; line-height:1.55; margin:0 0 18px;">{{ s.desc }}</p>
+            <span style="margin-top:auto; font:700 13.5px 'Manrope',sans-serif; color:#163A8C;">Подробнее →</span>
+          </a>
+        </sc-for>
       </div>
     </div>
-    <div class="foot-bottom">
-      <span>© 2004–2026 ЯНС-Аудит. Все права защищены.</span>
-      <span>Политика конфиденциальности</span>
-    </div>
-  </div>
-</footer>
+  </section>
 
-<script src="app.js"></script>
+  <!-- ============ WHY ============ -->
+  <section style="padding:92px 0; background:#F2F5F9; position:relative; overflow:hidden;">
+    <div style="position:absolute; right:-120px; bottom:-160px; width:460px; height:460px; border-radius:50%; background:radial-gradient(circle at center, rgba(99,177,247,.12), rgba(109,198,122,.08) 45%, transparent 68%); z-index:0;"></div>
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px; position:relative; z-index:1;">
+      <div style="display:flex; align-items:center; gap:10px; font:700 12px 'Manrope',sans-serif; color:#163A8C; letter-spacing:.18em; text-transform:uppercase;"><span style="width:7px; height:7px; border-radius:50%; background:#6DC67A;"></span>Почему мы</div>
+      <h2 style="font:600 40px 'Lora',serif; color:#163A8C; line-height:1.12; letter-spacing:-.01em; margin:14px 0 40px;">Аргументы, которые можно предъявить</h2>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:22px;">
+        <sc-for list="{{ why }}" as="w" hint-placeholder-count="4">
+          <div style="background:#FFFFFF; border:1px solid #E6ECF4; border-radius:18px; padding:30px 28px;">
+            <div style="font:600 38px 'Lora',serif; color:#163A8C; line-height:1;">{{ w.v }}</div>
+            <p style="font:400 14px 'Manrope',sans-serif; color:#6B7280; line-height:1.55; margin:14px 0 0;">{{ w.t }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM PREVIEW ============ -->
+  <section id="team" style="padding:92px 0;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px;">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:end; margin-bottom:44px;">
+        <div>
+          <div style="display:flex; align-items:center; gap:10px; font:700 12px 'Manrope',sans-serif; color:#163A8C; letter-spacing:.18em; text-transform:uppercase;"><span style="width:7px; height:7px; border-radius:50%; background:#6DC67A;"></span>Команда</div>
+          <h2 style="font:600 40px 'Lora',serif; color:#163A8C; line-height:1.12; letter-spacing:-.01em; margin:14px 0 0;">Профессионалы, которым доверяют</h2>
+        </div>
+        <p style="font:400 16px 'Manrope',sans-serif; color:#6B7280; line-height:1.6; margin:0;">Аттестованные аудиторы со стажем 10–30 лет, дипломы ACCA&nbsp;DipIFR по международной отчётности, члены СРО. Многие работают в компании со дня основания.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
+        <sc-for list="{{ team }}" as="t" hint-placeholder-count="3">
+          <div style="background:#FFFFFF; border:1px solid #E6ECF4; border-radius:18px; overflow:hidden; transition:transform .18s, box-shadow .18s, border-color .18s;" style-hover="transform:translateY(-4px); box-shadow:0 26px 60px -34px rgba(22,58,140,.34); border-color:#FFFFFF;">
+            <img src="{{ t.img }}" alt="{{ t.name }}" style="width:100%; aspect-ratio:1/1; object-fit:cover; display:block; background:#E9EFF6;">
+            <div style="padding:24px 26px;">
+              <div style="font:700 12.5px 'Manrope',sans-serif; color:#6DC67A; letter-spacing:.04em;">{{ t.role }}</div>
+              <h3 style="font:600 20px 'Lora',serif; color:#163A8C; margin:8px 0 0;">{{ t.name }}</h3>
+              <p style="font:400 14px 'Manrope',sans-serif; color:#6B7280; line-height:1.55; margin:10px 0 0;">{{ t.bio }}</p>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLIENTS ============ -->
+  <section style="padding:0 0 92px;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px;">
+      <div style="display:flex; align-items:center; gap:10px; font:700 12px 'Manrope',sans-serif; color:#163A8C; letter-spacing:.18em; text-transform:uppercase;"><span style="width:7px; height:7px; border-radius:50%; background:#6DC67A;"></span>Нас рекомендуют</div>
+      <h2 style="font:600 36px 'Lora',serif; color:#163A8C; line-height:1.12; letter-spacing:-.01em; margin:14px 0 32px; max-width:22ch;">Нам доверяют компании из разных отраслей</h2>
+      <div style="display:flex; flex-wrap:wrap; gap:14px;">
+        <sc-for list="{{ clients }}" as="c" hint-placeholder-count="9">
+          <span style="background:#FFFFFF; border:1px solid #E6ECF4; border-radius:12px; padding:14px 22px; font:700 14.5px 'Manrope',sans-serif; color:#163A8C;" style-hover="border-color:#63B1F7;">{{ c }}</span>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section id="contacts" style="padding:0 0 92px;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px;">
+      <div style="position:relative; overflow:hidden; background:#163A8C; border-radius:26px; padding:56px 52px; display:grid; grid-template-columns:1.4fr auto; gap:32px; align-items:center;">
+        <div style="position:absolute; right:-50px; top:-70px; width:280px; height:280px; border-radius:50%; border:1.5px solid rgba(99,177,247,.32); z-index:0;"></div>
+        <div style="position:absolute; right:90px; bottom:-120px; width:220px; height:220px; border-radius:50%; background:rgba(109,198,122,.16); z-index:0;"></div>
+        <div style="position:relative; z-index:1;">
+          <h2 style="font:600 34px 'Lora',serif; color:#FFFFFF; line-height:1.16; margin:0;">Обеспечим уверенность в&nbsp;ваших&nbsp;цифрах</h2>
+          <p style="font:400 16px 'Manrope',sans-serif; color:#C5D2EE; line-height:1.6; margin:12px 0 0; max-width:48ch;">Бесплатная консультация по любой задаче — аудит, МСФО, due diligence или налоговый аудит.</p>
+        </div>
+        <div style="position:relative; z-index:1; display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="tel:+74951031051" style="font:700 15px 'Manrope',sans-serif; color:#163A8C; background:#6DC67A; padding:14px 26px; border-radius:999px; text-decoration:none; white-space:nowrap;" style-hover="background:#5fbb6d;">+7 (495) 103-10-51</a>
+          <a href="mailto:yans@yans-audit.ru" style="font:700 15px 'Manrope',sans-serif; color:#FFFFFF; background:transparent; border:1.5px solid rgba(255,255,255,.35); padding:14px 26px; border-radius:999px; text-decoration:none; white-space:nowrap;" style-hover="border-color:#FFFFFF;">Написать нам</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#0E2456; color:#AEBFD9; padding:60px 0 28px; font-size:14px;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px;">
+      <div style="display:grid; grid-template-columns:1.5fr 1fr 1fr 1.1fr; gap:32px; padding-bottom:36px;">
+        <div>
+          <img src="assets/mark-badge.png" alt="ЯНС-Аудит" style="height:54px; width:auto; margin-bottom:16px;">
+          <p style="margin:0; max-width:34ch; line-height:1.6; color:#AEBFD9;">Аудиторско-консультационная группа. Обеспечиваем разумную уверенность клиентов в качестве их финансовой информации более 20 лет.</p>
+          <p style="font:600 16px 'Lora',serif; color:#A9E6B6; margin:16px 0 0;">Глобальное видение. Детальный анализ.</p>
+        </div>
+        <div>
+          <h4 style="font:700 14px 'Manrope',sans-serif; color:#FFFFFF; margin:0 0 14px; letter-spacing:.04em;">Услуги</h4>
+          <div style="display:flex; flex-direction:column; gap:9px;">
+            <a href="audit.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">Обязательный аудит</a>
+            <a href="msfo.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">МСФО</a>
+            <a href="due-diligence.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">Due diligence</a>
+            <a href="services.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">Налоговый аудит</a>
+            <a href="services.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">Форензик-аудит</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font:700 14px 'Manrope',sans-serif; color:#FFFFFF; margin:0 0 14px; letter-spacing:.04em;">Компания</h4>
+          <div style="display:flex; flex-direction:column; gap:9px;">
+            <a href="about.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">О компании</a>
+            <a href="team.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">Команда</a>
+            <a href="services.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">Все услуги</a>
+            <a href="contacts.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font:700 14px 'Manrope',sans-serif; color:#FFFFFF; margin:0 0 14px; letter-spacing:.04em;">Контакты</h4>
+          <div style="display:flex; flex-direction:column; gap:9px;">
+            <a href="tel:+74951031051" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">+7 (495) 103-10-51</a>
+            <a href="mailto:yans@yans-audit.ru" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">yans@yans-audit.ru</a>
+            <span style="color:#AEBFD9; line-height:1.5;">Москва, ул. 8 Марта, вл. 1,<br>стр. 12, к. 3, БЦ «ТРИО»</span>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,.12); padding-top:20px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:13px; color:#8197B8;">
+        <span>© 2004–2026 ЯНС-Аудит. Все права защищены.</span>
+        <span>Политика конфиденциальности</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  svg(...ch){return React.createElement('svg',{viewBox:'0 0 24 24',width:36,height:36,fill:'none',stroke:'#163A8C',strokeWidth:1.7,strokeLinecap:'round',strokeLinejoin:'round'},...ch);}
+  icon(name){const g='#6DC67A',e=React.createElement;const m={audit:[e('circle',{cx:10,cy:10,r:7}),e('line',{x1:15.2,y1:15.2,x2:21,y2:21}),e('polyline',{points:'7,10 9.3,12.4 13.3,8',stroke:g})],msfo:[e('path',{d:'M7 3h7l4 4v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z'}),e('path',{d:'M14 3v4h4'}),e('line',{x1:9,y1:17,x2:9,y2:14,stroke:g}),e('line',{x1:12,y1:17,x2:12,y2:11,stroke:g}),e('line',{x1:15,y1:17,x2:15,y2:13,stroke:g})],dd:[e('circle',{cx:12,cy:12,r:7.5}),e('path',{d:'M12 12V4.5A7.5 7.5 0 0 1 19.5 12Z',stroke:g})],tax:[e('rect',{x:5,y:3,width:14,height:18,rx:2}),e('line',{x1:8,y1:7,x2:16,y2:7}),e('line',{x1:9,y1:17,x2:15,y2:11,stroke:g}),e('circle',{cx:9.2,cy:11.2,r:0.7,stroke:g}),e('circle',{cx:14.8,cy:16.8,r:0.7,stroke:g})],forensic:[e('path',{d:'M12 3l7 2.5v5.5c0 4.4-3 7.3-7 8.5-4-1.2-7-4.1-7-8.5V5.5z'}),e('polyline',{points:'8.5,12 11,14.5 15.5,9',stroke:g})],fta:[e('line',{x1:5,y1:19,x2:19,y2:19}),e('line',{x1:8,y1:19,x2:8,y2:13}),e('line',{x1:12,y1:19,x2:12,y2:9}),e('line',{x1:16,y1:19,x2:16,y2:14,stroke:g})]};return this.svg(...(m[name]||m.audit));}
+  renderVals() {
+    return {
+      nav: [
+        { label: 'О компании', href: 'about.html' },
+        { label: 'Услуги', href: 'services.html' },
+        { label: 'Команда', href: 'team.html' },
+        { label: 'Контакты', href: 'contacts.html' },
+      ],
+      metrics: [
+        { n: '20+', l: 'лет на рынке' },
+        { n: '10', l: 'аттестованных аудиторов' },
+        { n: '85%', l: 'клиентов с нами 5+ лет' },
+        { n: '50+', l: 'заключений в год' },
+      ],
+      services: [
+        { num: '01', title: 'Обязательный аудит', href: 'audit.html', desc: 'Аудит по РСБУ для случаев, установленных законом. Заключениям доверяют банки и инвесторы.', icon: this.icon('audit') },
+        { num: '02', title: 'МСФО и аудит МСФО', href: 'msfo.html', desc: 'Трансформация и аудит отчётности по международным стандартам для партнёров и консолидации.', icon: this.icon('msfo') },
+        { num: '03', title: 'Due diligence', href: 'due-diligence.html', desc: 'Финансовая и налоговая предынвестиционная экспертиза объекта сделки и расчёт справедливой стоимости.', icon: this.icon('dd') },
+        { num: '04', title: 'Налоговый аудит', href: 'services.html', desc: 'Диагностика налоговых рисков и проверка налогового учёта по итогам периода.', icon: this.icon('tax') },
+        { num: '05', title: 'Форензик-аудит', href: 'services.html', desc: 'Финансовое расследование, выявление недобросовестности и вывода активов при полной конфиденциальности.', icon: this.icon('forensic') },
+        { num: '06', title: 'Финансово-технический аудит', href: 'services.html', desc: 'Комплексная оценка инвестпроекта на этапе реализации по запросу кредитора или инвестора.', icon: this.icon('fta') },
+      ],
+      why: [
+        { v: '20+', t: 'лет опыта во всех ключевых отраслях: IT, фарма, строительство, торговля, производство, НКО' },
+        { v: 'ААС', t: 'член СРО аудиторов ААС; внешний контроль качества пройден в 2024 году' },
+        { v: '85%', t: 'клиентов работают с нами на ежегодной основе пять лет и более' },
+        { v: '∞', t: 'страхование ответственности аудитора и безусловная конфиденциальность информации' },
+      ],
+      team: [
+        { img: 'assets/litvinov.jpg', role: 'Основатель · партнёр', name: 'Николай Литвинов', bio: 'Более 30 лет в аудите и финансах. Лично курирует крупнейшие проверки, due diligence и финансовые расследования.' },
+        { img: 'assets/budilova.jpg', role: 'Руководитель отдела аудита', name: 'Наталья Будилова', bio: 'Свыше 20 лет в финансах. Руководит проверками публичных компаний. ACCA DipIFR (МСФО).' },
+        { img: 'assets/belenova.jpg', role: 'Ведущий аудитор', name: 'Тамара Беленова', bio: 'Более 10 лет в аудиторских и налоговых проектах: производство, медиа, энергетика, due diligence.' },
+      ],
+      clients: ['НОРБИТ', 'ВТБ Капитал ПР Лизинг', 'Медиа Инстинкт', 'Стивидоры Ямал', 'АВИА КАПИТАЛ', 'Сесдерма Рус', 'АГРОИНВЕСТ', 'АПС Энергия Рус', 'Цифровой автолизинг', 'ОРТЕКА', 'СкайТЕК МЕДИА', 'НЕЙРОТРЕНД', 'ТРАНСФИНГРУПП', 'Семин РУС', 'Хлебпром', 'Дальпромрыба', 'ЕВРОПЕУМ', 'ЭнДиБиСи'],
+    };
+  }
+}
+</script>
 </body>
 </html>

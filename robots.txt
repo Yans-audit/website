@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Sitemap: https://yans-audit.ru/sitemap.xml
+
+User-agent: Yandex
+Allow: /
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
+Host: https://yans-audit.ru

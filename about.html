@@ -1,126 +1,196 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>О компании — ЯНС-Аудит</title>
-<meta name="description" content="ООО «АКГ «Я.Н.С. Аудит» — независимая аудиторская компания. Более 20 лет на рынке, член СРО ААС, ОГРН 1047796631123.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
-<link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
 </head>
 <body>
-<header class="site-head">
-  <div class="wrap nav">
-    <a class="brand" href="index.html" aria-label="ЯНС-Аудит, на главную">
-      <img class="mark" src="img/logo-mark.png" alt="" aria-hidden="true">
-      <span><b>ЯНС-Аудит</b><small>Аудиторско-консультационная группа</small></span>
-    </a>
-    <nav class="nav-links" id="menu">
-      <a href="index.html">Главная</a>
-      <a href="about.html" class="active">О компании</a>
-      <a href="services.html">Услуги</a>
-      <a href="audit.html">Аудит</a>
-      <a href="msfo.html">МСФО</a>
-      <a href="advisory.html">Due diligence</a>
-      <a href="team.html">Команда</a>
-      <a href="contacts.html">Контакты</a>
-    </nav>
-    <a href="contacts.html" class="btn">Консультация</a>
-    <button class="burger" aria-label="Меню" onclick="document.getElementById('menu').classList.toggle('open')"><span></span><span></span><span></span></button>
-  </div>
-</header>
-<section class="phero"><div class="wrap">
-      <p class="crumb"><a href="index.html">Главная</a> — О компании</p>
-      <p class="eyebrow">С 2004 года</p>
-      <h1>О компании</h1>
-      <p class="lede">ЯНС-Аудит — российская аудиторско-консультационная группа. Каждый наш проект — это поиск оптимального пути для вашего бизнеса, основанный на открытости и доверии.</p>
-    </div></section>
-<section class="section"><div class="wrap">
-  <div class="svc-detail">
-    <div class="reveal">
-      <h2>Мы</h2>
-      <p>С 2004 года ЯНС-Аудит специализируется на аудите и связанных с ним услугах: обязательный и инициативный аудит, аудит отчётности по МСФО, внутренний и налоговый аудит, финансово-технический аудит, форензик и due diligence.</p>
-      <p>В нашей работе мы заботимся о качестве, верим в его ценность и стремимся к нему во всём, что делаем. Компания ежегодно проходит процедуры внешнего контроля качества и поддерживает систему управления качеством в соответствии с МСК 1.</p>
-      <p class="quote">За какой бы услугой вы ни обратились — вы получите высокое качество и профессиональный подход!</p>
-      <h2 style="margin-top:2rem">Команда</h2>
-      <p>В штате — сплочённая команда аудиторов с опытом работы с компаниями из разных отраслей: от небольших торговых фирм до крупных международных корпораций. Многие специалисты работают в компании более 15 лет, топ-менеджмент — с момента основания.</p>
-    </div>
-    <div class="aside-card reveal">
-      <h3>Аккредитации и контроль качества</h3>
-      <ul class="checks">
-        <li>Член СРО аудиторов ААС — ОРНЗ 12006066598, в реестре с 2020 года</li>
-        <li>Система управления качеством в соответствии с МСК 1</li>
-        <li>Внешняя проверка качества СРО ААС в 2024 году (период 2021–2023)</li>
-        <li>Страхование ответственности аудитора</li>
-      </ul>
-      <h3 style="margin-top:1.6rem">Рейтинги</h3>
-      <p style="color:var(--slate);font-size:.95rem">С 2001 года ЯНС-Аудит стабильно входит в число 50 крупнейших российских аудиторских и консалтинговых компаний по версии рейтингового агентства «Эксперт РА».</p>
-    </div>
-  </div>
-</div></section>
+<x-dc>
+<helmet>
+  <title>О компании — ЯНС-Аудит | аудиторско-консультационная группа</title>
+  <meta name="description" content="ООО «АКГ «Я.Н.С. Аудит» — независимая аудиторская компания. 20+ лет на рынке, член СРО ААС, ОГРН 1047796631123. Качество, подтверждённое внешним контролем.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yans-audit.ru/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="ЯНС-Аудит">
+  <meta property="og:title" content="О компании — ЯНС-Аудит">
+  <meta property="og:description" content="Независимая аудиторско-консультационная группа. 20+ лет на рынке, член СРО ААС, контроль качества по МСК 1.">
+  <meta property="og:image" content="https://yans-audit.ru/assets/office-hero.png">
+  <meta property="og:url" content="https://yans-audit.ru/about.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;}
+    body{margin:0; background:#FFFFFF;}
+    ::selection{background:#CDEBD4;}
+  </style>
+</helmet>
 
-<section class="section mist"><div class="wrap">
-  <p class="eyebrow">Отрасли</p>
-  <h2 style="margin-bottom:30px">Глубокая экспертиза во всех ключевых отраслях</h2>
-  <div class="why">
-    <div class="item reveal"><h3>IT и цифра</h3><p>Аудит и сопровождение технологических компаний и интеграторов</p></div>
-    <div class="item reveal"><h3>Фармацевтика</h3><p>Отраслевая специфика учёта и регулирования</p></div>
-    <div class="item reveal"><h3>Строительство</h3><p>Финансово-технический аудит инвестпроектов</p></div>
-    <div class="item reveal"><h3>Торговля</h3><p>Розница, дистрибуция, e-commerce</p></div>
-    <div class="item reveal"><h3>Производство</h3><p>Промышленные и пищевые предприятия</p></div>
-    <div class="item reveal"><h3>Услуги</h3><p>Сервисные и транспортно-логистические компании</p></div>
-    <div class="item reveal"><h3>НКО</h3><p>Аудит целевого использования средств</p></div>
-    <div class="item reveal"><h3>Финансы</h3><p>Инвестгруппы, управляющие компании, фонды</p></div>
-  </div>
-</div></section>
+<div style="font-family:'Manrope',sans-serif; color:#3A4452; background:#FFFFFF; overflow-x:hidden;">
 
-<section class="section"><div class="wrap"><div class="cta-band reveal">
-  <svg class="pat" viewBox="0 0 200 200" aria-hidden="true"><g id="patg" transform="translate(100,100)"></g></svg>
-  <div><h2>Познакомимся?</h2><p>Расскажите о вашей задаче — предложим решение и оценим сроки.</p></div>
-  <div style="display:flex;gap:12px;flex-wrap:wrap"><a href="contacts.html" class="btn">Связаться с нами</a></div>
-</div></div></section>
-<footer class="site-foot">
-  <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <img class="foot-logo" src="img/logo-main.png" alt="ЯНС-Аудит">
-        <b>ЯНС-Аудит</b>
-        <p style="margin-top:10px;max-width:34ch">Аудиторско-консультационная группа. Обеспечиваем разумную уверенность клиентов в качестве их финансовой информации более 20 лет.</p>
-        <p class="foot-tag script">Глобальное видение. Детальный анализ.</p>
-      </div>
+  <!-- ============ HEADER ============ -->
+  <header style="position:sticky; top:0; z-index:50; background:rgba(255,255,255,.88); backdrop-filter:blur(12px); border-bottom:1px solid #E6ECF4;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px; height:78px; display:flex; align-items:center; gap:28px;">
+      <a href="index.html" style="display:flex; align-items:center; margin-right:auto; text-decoration:none;">
+        <img src="assets/logo-main.png" alt="ЯНС-Аудит" style="height:42px; width:auto;">
+      </a>
+      <nav style="display:flex; gap:26px; align-items:center;">
+        <a href="about.html" style="font:700 14.5px 'Manrope',sans-serif; color:#163A8C; text-decoration:none; white-space:nowrap; border-bottom:2px solid #6DC67A; padding-bottom:3px;">О компании</a>
+        <a href="services.html" style="font:600 14.5px 'Manrope',sans-serif; color:#3A4452; text-decoration:none; white-space:nowrap;" style-hover="color:#163A8C;">Услуги</a>
+        <a href="team.html" style="font:600 14.5px 'Manrope',sans-serif; color:#3A4452; text-decoration:none; white-space:nowrap;" style-hover="color:#163A8C;">Команда</a>
+        <a href="contacts.html" style="font:600 14.5px 'Manrope',sans-serif; color:#3A4452; text-decoration:none; white-space:nowrap;" style-hover="color:#163A8C;">Контакты</a>
+      </nav>
+      <a href="contacts.html" style="font:700 14px 'Manrope',sans-serif; color:#FFFFFF; background:#163A8C; padding:11px 22px; border-radius:999px; text-decoration:none; white-space:nowrap;" style-hover="background:#112d6e;">Консультация</a>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section style="position:relative; overflow:hidden; background:linear-gradient(180deg,#FFFFFF 0%,#F2F5F9 100%);">
+    <div style="position:absolute; right:-150px; top:-120px; width:480px; height:480px; border-radius:50%; background:linear-gradient(150deg,#EAF2FE,#FFFFFF); z-index:0;"></div>
+    <div style="position:absolute; right:140px; top:90px; width:190px; height:190px; border-radius:50%; border:1.5px solid #CFE0FB; z-index:0;"></div>
+    <div style="max-width:1200px; margin:0 auto; padding:42px 40px 62px; position:relative; z-index:1;">
+      <div style="font:500 13px 'Manrope',sans-serif; color:#9AA4B2;"><a href="index.html" style="color:#9AA4B2; text-decoration:none;" style-hover="color:#163A8C;">Главная</a> — О компании</div>
+      <div style="display:flex; align-items:center; gap:10px; margin-top:26px; font:700 12px 'Manrope',sans-serif; color:#163A8C; letter-spacing:.18em; text-transform:uppercase;"><span style="width:7px; height:7px; border-radius:50%; background:#6DC67A;"></span>С 2004 года</div>
+      <h1 style="font:600 52px 'Lora',serif; color:#163A8C; line-height:1.08; letter-spacing:-.015em; margin:16px 0 0;">О компании</h1>
+      <p style="font:400 18px 'Manrope',sans-serif; color:#5B6573; line-height:1.6; max-width:56ch; margin:20px 0 0;">ЯНС-Аудит — российская аудиторско-консультационная группа. Каждый наш проект — это поиск оптимального пути для вашего бизнеса, основанный на открытости и доверии.</p>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT BODY ============ -->
+  <section style="padding:84px 0;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px; display:grid; grid-template-columns:1.45fr .85fr; gap:56px; align-items:start;">
       <div>
-        <h4>Услуги</h4>
-        <a href="audit.html">Обязательный аудит</a>
-        <a href="msfo.html">МСФО</a>
-        <a href="advisory.html">Due diligence</a>
-        <a href="services.html#nalog">Налоговый аудит</a>
-        <a href="services.html#forensic">Форензик-аудит</a>
+        <h2 style="font:600 34px 'Lora',serif; color:#163A8C; line-height:1.14; margin:0;">Мы</h2>
+        <p style="font:400 16.5px 'Manrope',sans-serif; color:#5B6573; line-height:1.7; margin:18px 0 0;">С 2004 года ЯНС-Аудит специализируется на аудите и связанных с ним услугах: обязательный и инициативный аудит, аудит отчётности по МСФО, внутренний и налоговый аудит, финансово-технический аудит, форензик и due diligence.</p>
+        <p style="font:400 16.5px 'Manrope',sans-serif; color:#5B6573; line-height:1.7; margin:16px 0 0;">В нашей работе мы заботимся о качестве, верим в его ценность и стремимся к нему во всём, что делаем. Компания ежегодно проходит процедуры внешнего контроля качества и поддерживает систему управления качеством в соответствии с МСК&nbsp;1.</p>
+        <p style="font:500 italic 22px 'Lora',serif; color:#163A8C; line-height:1.45; margin:30px 0; padding:22px 0 22px 26px; border-left:3px solid #6DC67A;">За какой бы услугой вы ни обратились — вы получите высокое качество и профессиональный подход.</p>
+        <h2 style="font:600 34px 'Lora',serif; color:#163A8C; line-height:1.14; margin:38px 0 0;">Команда</h2>
+        <p style="font:400 16.5px 'Manrope',sans-serif; color:#5B6573; line-height:1.7; margin:18px 0 0;">В штате — сплочённая команда аудиторов с опытом работы с компаниями из разных отраслей: от небольших торговых фирм до крупных международных корпораций. Многие специалисты работают в компании более 15 лет, топ-менеджмент — с момента основания.</p>
+        <a href="team.html" style="display:inline-flex; align-items:center; gap:8px; margin-top:24px; font:700 15px 'Manrope',sans-serif; color:#163A8C; text-decoration:none;" style-hover="gap:12px;">Познакомиться с командой →</a>
       </div>
-      <div>
-        <h4>Компания</h4>
-        <a href="about.html">О компании</a>
-        <a href="team.html">Команда</a>
-        <a href="services.html">Все услуги</a>
-        <a href="contacts.html">Контакты</a>
-      </div>
-      <div>
-        <h4>Контакты</h4>
-        <a href="tel:+74951031051">+7 (495) 103-10-51</a>
-        <a href="mailto:yans@yans-audit.ru">yans@yans-audit.ru</a>
-        <a href="contacts.html">Москва, ул. 8 Марта, вл. 1,<br>стр. 12, к. 3, БЦ «ТРИО»</a>
+      <aside style="background:#F2F5F9; border:1px solid #E6ECF4; border-radius:20px; padding:34px 32px;">
+        <h3 style="font:600 19px 'Lora',serif; color:#163A8C; margin:0 0 18px;">Аккредитации и контроль качества</h3>
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <sc-for list="{{ accreditations }}" as="a" hint-placeholder-count="4">
+            <div style="display:flex; gap:12px; align-items:flex-start;">
+              <span style="width:18px; height:18px; border-radius:50%; background:#CDEBD4; color:#2E7D43; font:700 11px 'Manrope',sans-serif; display:flex; align-items:center; justify-content:center; flex:0 0 auto; margin-top:1px;">✓</span>
+              <span style="font:400 14.5px 'Manrope',sans-serif; color:#5B6573; line-height:1.5;">{{ a }}</span>
+            </div>
+          </sc-for>
+        </div>
+        <h3 style="font:600 19px 'Lora',serif; color:#163A8C; margin:28px 0 12px;">Рейтинги</h3>
+        <p style="font:400 14.5px 'Manrope',sans-serif; color:#5B6573; line-height:1.6; margin:0;">С 2001 года ЯНС-Аудит стабильно входит в число 50 крупнейших российских аудиторских и консалтинговых компаний по версии рейтингового агентства «Эксперт&nbsp;РА».</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ INDUSTRIES ============ -->
+  <section style="padding:88px 0; background:#F2F5F9; position:relative; overflow:hidden;">
+    <div style="position:absolute; right:-120px; bottom:-160px; width:460px; height:460px; border-radius:50%; background:radial-gradient(circle at center, rgba(99,177,247,.12), rgba(109,198,122,.08) 45%, transparent 68%); z-index:0;"></div>
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px; position:relative; z-index:1;">
+      <div style="display:flex; align-items:center; gap:10px; font:700 12px 'Manrope',sans-serif; color:#163A8C; letter-spacing:.18em; text-transform:uppercase;"><span style="width:7px; height:7px; border-radius:50%; background:#6DC67A;"></span>Отрасли</div>
+      <h2 style="font:600 38px 'Lora',serif; color:#163A8C; line-height:1.12; letter-spacing:-.01em; margin:14px 0 40px; max-width:24ch;">Глубокая экспертиза во всех ключевых отраслях</h2>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:22px;">
+        <sc-for list="{{ industries }}" as="i" hint-placeholder-count="8">
+          <div style="background:#FFFFFF; border:1px solid #E6ECF4; border-radius:18px; padding:26px 24px;">
+            <div style="width:9px; height:9px; border-radius:50%; background:#6DC67A; margin-bottom:16px;"></div>
+            <h3 style="font:600 18px 'Lora',serif; color:#163A8C; margin:0;">{{ i.n }}</h3>
+            <p style="font:400 13.5px 'Manrope',sans-serif; color:#6B7280; line-height:1.5; margin:8px 0 0;">{{ i.d }}</p>
+          </div>
+        </sc-for>
       </div>
     </div>
-    <div class="foot-bottom">
-      <span>© 2004–2026 ЯНС-Аудит. Все права защищены.</span>
-      <span>Политика конфиденциальности</span>
+  </section>
+
+  <!-- ============ CTA BAND ============ -->
+  <section style="padding:88px 0;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px;">
+      <div style="position:relative; overflow:hidden; background:#163A8C; border-radius:26px; padding:56px 52px; display:grid; grid-template-columns:1.4fr auto; gap:32px; align-items:center;">
+        <div style="position:absolute; right:-50px; top:-70px; width:280px; height:280px; border-radius:50%; border:1.5px solid rgba(99,177,247,.32); z-index:0;"></div>
+        <div style="position:absolute; right:90px; bottom:-120px; width:220px; height:220px; border-radius:50%; background:rgba(109,198,122,.16); z-index:0;"></div>
+        <div style="position:relative; z-index:1;">
+          <h2 style="font:600 34px 'Lora',serif; color:#FFFFFF; line-height:1.16; margin:0;">Познакомимся?</h2>
+          <p style="font:400 16px 'Manrope',sans-serif; color:#C5D2EE; line-height:1.6; margin:12px 0 0; max-width:48ch;">Расскажите о вашей задаче — предложим решение и оценим сроки.</p>
+        </div>
+        <div style="position:relative; z-index:1; display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="contacts.html" style="font:700 15px 'Manrope',sans-serif; color:#163A8C; background:#6DC67A; padding:14px 26px; border-radius:999px; text-decoration:none; white-space:nowrap;" style-hover="background:#5fbb6d;">Связаться с нами</a>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
-<script src="app.js"></script>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#0E2456; color:#AEBFD9; padding:60px 0 28px; font-size:14px;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 40px;">
+      <div style="display:grid; grid-template-columns:1.5fr 1fr 1fr 1.1fr; gap:32px; padding-bottom:36px;">
+        <div>
+          <img src="assets/mark-badge.png" alt="ЯНС-Аудит" style="height:54px; width:auto; margin-bottom:16px;">
+          <p style="margin:0; max-width:34ch; line-height:1.6; color:#AEBFD9;">Аудиторско-консультационная группа. Обеспечиваем разумную уверенность клиентов в качестве их финансовой информации более 20 лет.</p>
+          <p style="font:600 16px 'Lora',serif; color:#A9E6B6; margin:16px 0 0;">Глобальное видение. Детальный анализ.</p>
+        </div>
+        <div>
+          <h4 style="font:700 14px 'Manrope',sans-serif; color:#FFFFFF; margin:0 0 14px; letter-spacing:.04em;">Услуги</h4>
+          <div style="display:flex; flex-direction:column; gap:9px;">
+            <a href="audit.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">Обязательный аудит</a>
+            <a href="msfo.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">МСФО</a>
+            <a href="due-diligence.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">Due diligence</a>
+            <a href="services.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">Налоговый аудит</a>
+            <a href="services.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">Форензик-аудит</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font:700 14px 'Manrope',sans-serif; color:#FFFFFF; margin:0 0 14px; letter-spacing:.04em;">Компания</h4>
+          <div style="display:flex; flex-direction:column; gap:9px;">
+            <a href="about.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">О компании</a>
+            <a href="team.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">Команда</a>
+            <a href="services.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">Все услуги</a>
+            <a href="contacts.html" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font:700 14px 'Manrope',sans-serif; color:#FFFFFF; margin:0 0 14px; letter-spacing:.04em;">Контакты</h4>
+          <div style="display:flex; flex-direction:column; gap:9px;">
+            <a href="tel:+74951031051" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">+7 (495) 103-10-51</a>
+            <a href="mailto:yans@yans-audit.ru" style="color:#AEBFD9; text-decoration:none;" style-hover="color:#FFFFFF;">yans@yans-audit.ru</a>
+            <span style="color:#AEBFD9; line-height:1.5;">Москва, ул. 8 Марта, вл. 1,<br>стр. 12, к. 3, БЦ «ТРИО»</span>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,.12); padding-top:20px; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; font-size:13px; color:#8197B8;">
+        <span>© 2004–2026 ЯНС-Аудит. Все права защищены.</span>
+        <span>Политика конфиденциальности</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      accreditations: [
+        'Член СРО аудиторов ААС — ОРНЗ 12006066598, в реестре с 2020 года',
+        'Система управления качеством в соответствии с МСК 1',
+        'Внешняя проверка качества СРО ААС в 2024 году (период 2021–2023)',
+        'Страхование ответственности аудитора',
+      ],
+      industries: [
+        { n: 'IT и цифра', d: 'Аудит и сопровождение технологических компаний и интеграторов' },
+        { n: 'Фармацевтика', d: 'Отраслевая специфика учёта и регулирования' },
+        { n: 'Строительство', d: 'Финансово-технический аудит инвестпроектов' },
+        { n: 'Торговля', d: 'Розница, дистрибуция, e-commerce' },
+        { n: 'Производство', d: 'Промышленные и пищевые предприятия' },
+        { n: 'Услуги', d: 'Сервисные и транспортно-логистические компании' },
+        { n: 'НКО', d: 'Аудит целевого использования средств' },
+        { n: 'Финансы', d: 'Инвестгруппы, управляющие компании, фонды' },
+      ],
+    };
+  }
+}
+</script>
 </body>
 </html>
